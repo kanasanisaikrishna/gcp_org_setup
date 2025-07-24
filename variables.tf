@@ -3,8 +3,8 @@ variable "main_project" {
   description = "we are using the free trail account"
 }
 
-variable "delete_policy"{
-  type = string
+variable "delete_policy" {
+  type    = string
   default = "PREVENT"
 }
 

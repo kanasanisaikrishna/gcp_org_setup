@@ -1,0 +1,24 @@
+projects:
+    - name: analytics-dev-projects-01
+      id  : analytics-dev-projects-01
+      labels :
+        folder : analytics
+        env    : dev
+
+    - name: analytics-prod-projects-01
+      id  : analytics-prod-projects-01
+      labels :
+        folder : analytics
+        env    : prod
+
+    - name: payments-dev-projects-01
+      id  : payments-dev-projects-01
+      labels :
+        folder : payments
+        env    : dev
+
+    - name: payments-prod-projects-01
+      id  : payments-prod-projects-01
+      labels :
+        folder : payments
+        env    : prod

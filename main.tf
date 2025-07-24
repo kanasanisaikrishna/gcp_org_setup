@@ -14,6 +14,11 @@ provider "google" {
   zone    = var.zone
 }
 
+# # if you use YAML istead of tfvars file
+# locals {
+#   data = yamldecode(file("projects.yaml"))
+# }
+
 resource "google_project" "projects" {
   for_each = { for proj in var.projects : proj.project_id => proj }
 
@@ -74,4 +79,8 @@ resource "google_project" "projects" {
 #   display_name = "Department 1"
 #   parent       = "organizations/1234567"
 #   tags = {"1234567/env":"staging"}
+# }
+
+# locals {
+#   data = yamldecode(file("projects.yaml"))
 # }
